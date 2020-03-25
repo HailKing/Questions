@@ -1,2 +1,2 @@
 # Questions
- Repositor for answering programming questions
+ Repository for answering programming questions
