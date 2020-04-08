@@ -36,11 +36,11 @@ public class Alarm_Clock {
                 result = func(h1, m1, h2, m2);
             }
             if(h1 > h2){
-                result = ((24 - (h1 - h2)) * 60 + (m2 - m1));
+                result = func(0, m1, 24 - (h1 - h2), m2);
             }
             if(h1 == h2){
                 if(m1 == m2) result = 0;
-                if(m1 > m2) result = 24 * 60 + (m2 - m1);
+                if(m1 > m2) result = func(0, m1, 24, m2);
                 else result = func(h1, m1, h2, m2);
             }
             System.out.println(result);
