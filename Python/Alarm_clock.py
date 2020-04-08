@@ -3,7 +3,7 @@
 ############## From: The Huxley
 ############## Author: Hércules de Sousa
 ############## Email: herculesdeso@gmail.com
-############## Data: 15/10/2019 
+############## Data: 15/10/2019
 ################################################################################################################################
 
 def simplifying(arr):
@@ -13,15 +13,15 @@ def simplifying(arr):
 
 while True:
     entry = input()
-    if(entry == '0 0 0 0'): break
+    if entry == '0 0 0 0': break
     entry = entry.split()
     for x in range(len(entry)):
         entry[x] = int(entry[x])
         if(entry[0] == 0): entry[0] = 24
         if(entry[2] == 0): entry[2] = 24
-    if(entry[2] > entry[0]):
+    if entry[2] > entry[0]:
         simplifying(entry)
-    elif(entry[2] == entry[0] and entry[1] > entry[3]):
+    elif entry[2] == entry[0] and entry[1] > entry[3]:
         hours = 24 * 60
         minutes = entry[3] - entry[1]
         print(hours + minutes)
