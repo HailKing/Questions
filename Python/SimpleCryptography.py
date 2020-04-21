@@ -56,3 +56,8 @@ def reversed_first(t):
 
 def decrypt(text):
     return reversed_first(reversed_second(text)[::-1])
+
+
+if __name__ == "__main__":
+    for i in range(int(input())):
+        print(encrypt(input()))
