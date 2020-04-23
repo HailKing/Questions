@@ -8,9 +8,4 @@
 ################################################################################################################################
 
 
-n = int(input())
-hour = int(input())
-price = float(input())
-
-print("NUMBER = {}".format(n))
-print("SALARY = U$ {:.2f}".format(price * hour))
+print("NUMBER = {}\nSALARY = U$ {:.2f}".format(int(input()), int(input()) * float(input())))
